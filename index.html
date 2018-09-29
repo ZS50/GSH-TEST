@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>GSH - Test</title>
+    <!-- Metas -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <!-- stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+    <div class="__wrapper">
+        <div class="__service_wrapper">
+            <div class="__service_header">
+                <h2 class="__heading">We have identified you are staying with us at 205, Green Ark Tower, Baner, Pune.</h2>
+                <div class="__serv_search_box">
+                    <div class="__serv_search_div">
+                        <span class="__search_txt">Enter Service Request...</span>
+                        <div class="__selected_conatiner" data-item-collection>
+                        </div>
+                    </div>
+                    <div class="__serv_submit">
+                        <button type="button" class="__submitbtn" id="submit" disabled="disabled">Submit</button>
+                    </div>
+                </div>
+                <!-- service search -->
+                <div class="__serv_type_container">
+                    <div class="__serv_type_row" data-step="0">
+                        <p>Please select your type of Service Request</p>
+                        <div class="__req_radio_box">
+                            <div class="__radios" data-name="Furniture" data-id="ITEM001" data-index="0" onclick="fnAddItem(this);">
+                                <input name="service_request" id="1" type="radio" value="Furniture Repair">
+                                <label for="1">Furniture Repair</label>
+                            </div>
+                            <div class="__radios" data-name="Plumbing" data-id="ITEM002" data-index="0" onclick="fnAddItem(this);">
+                                <input name="service_request" id="2" type="radio" value="Plumbing Issue">
+                                <label for="2">Plumbing Issue</label>
+                            </div>
+                            <div class="__radios" data-name="Electrical" data-id="ITEM003" data-index="0" onclick="fnAddItem(this);">
+                                <input name="service_request" id="3" type="radio" value="Electrical Issue">
+                                <label for="3">Electrical Issue</label>
+                            </div>
+                            <div class="__radios" data-name="Internet" data-id="ITEM004" data-index="0" onclick="fnAddItem(this);">
+                                <input name="service_request" id="4" type="radio" value="Internet Issue">
+                                <label for="4">Internet Issue</label>
+                            </div>
+                            <div class="__radios" data-name="DTH / Cable Issue" data-id="ITEM005" data-index="0" onclick="fnAddItem(this);">
+                                <input name="service_request" id="5" type="radio" value="DTH / Cable Issue">
+                                <label for="5">DTH / Cable Issue</label>
+                            </div>
+                            <div class="__radios" data-name="Cooking Gas Issue" data-id="ITEM006" data-index="0" onclick="fnAddItem(this);">
+                                <input name="service_request" id="6" type="radio" value="Cooking Gas Issue">
+                                <label for="6">Cooking Gas Issue</label>
+                            </div>
+                            <div class="__radios" data-name="Water Issue" data-id="ITEM007" data-index="0" onclick="fnAddItem(this);">
+                                <input name="service_request" id="7" type="radio" value="Water Issue">
+                                <label for="7">Water Issue</label>
+                            </div>
+                            <div class="__radios" data-name="House Keys" data-id="ITEM008" data-index="0" onclick="fnAddItem(this);">
+                                <input name="service_request" id="8" type="radio" value="House Keys">
+                                <label for="8">House Keys</label>
+                            </div>
+                            <div class="__radios" data-name="Electronic Appliance Service" data-id="ITEM009" data-index="0" onclick="fnAddItem(this);">
+                                <input name="service_request" id="9" type="radio" value="Electronic Appliance Service">
+                                <label for="9">Electronic Appliance Service</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="__serv_type_row" data-step="1">
+                        <p>Please select your type of Issue</p>
+                        <div class="__req_radio_box">
+                            <div class="__radios" data-name="Issue with Bed" data-id="ITEM0010" data-index="1" onclick="fnAddItem(this);">
+                                <input name="service_issue" id="issue1" type="radio" value="Issue with Bed">
+                                <label for="issue1">Issue with Bed</label>
+                            </div>
+                            <div class="__radios" data-name="Issue with Wardrobe" data-id="ITEM0011" data-index="1" onclick="fnAddItem(this);">
+                                <input name="service_issue" id="issue2" type="radio" value="Issue with Wardrobe">
+                                <label for="issue2">Issue with Wardrobe</label>
+                            </div>
+                            <div class="__radios" data-name="Issue with Mattress" data-id="ITEM0012" data-index="1" onclick="fnAddItem(this);">
+                                <input name="service_issue" id="issue3" type="radio" value="Issue with Mattress">
+                                <label for="issue3">Issue with Mattress</label>
+                            </div>
+                            <div class="__radios" data-name="Issue with Side table" data-id="ITEM0013" data-index="1" onclick="fnAddItem(this);">
+                                <input name="service_issue" id="issue4" type="radio" value="Issue with Side table">
+                                <label for="issue4">Issue with Side table</label>
+                            </div>
+                            <div class="__radios" data-name="Issue with Sofa Set" data-id="ITEM0014" data-index="1" onclick="fnAddItem(this);">
+                                <input name="service_issue" id="issue5" type="radio" value="Issue with Sofa Set">
+                                <label for="issue5">Issue with Sofa Set</label>
+                            </div>
+                            <div class="__radios" data-name="Issue with Dining Table" data-id="ITEM0015" data-index="1" onclick="fnAddItem(this);">
+                                <input name="service_issue" id="issue6" type="radio" value="Issue with Dining Table">
+                                <label for="issue6">Issue with Dining Table</label>
+                            </div>
+                            <div class="__radios" data-name="Issue with Kitchen cabinets" data-id="ITEM0016" data-index="1" onclick="fnAddItem(this);">
+                                <input name="service_issue" id="issue7" type="radio" value="Issue with Kitchen cabinets">
+                                <label for="issue7">Issue with Kitchen cabinets</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="__serv_type_row" data-step="2">
+                        <p>Please select your type of Priority</p>
+                        <div class="__req_radio_box">
+                            <div class="__radios" data-name="High Priority" data-id="ITEM0017" data-index="2" onclick="fnAddItem(this);">
+                                <input name="service_priority" id="priority1" type="radio" value="High Priority">
+                                <label for="priority1">High Priority</label>
+                            </div>
+                            <div class="__radios" data-name="Fix it asap" data-id="ITEM0018" data-index="2" onclick="fnAddItem(this);">
+                                <input name="service_priority" id="priority2" type="radio" value="Fix it asap">
+                                <label for="priority2">Fix it asap</label>
+                            </div>
+                            <div class="__radios" data-name="Not Bothering, but needs to be fixed" data-id="ITEM0019" data-index="2" onclick="fnAddItem(this);">
+                                <input name="service_priority" id="priority3" type="radio" value="Not Bothering, but needs to be fixed">
+                                <label for="priority3">Not Bothering, but needs to be fixed</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="__serv_type_row" data-step="3">
+                        <div class="__req_input_cmnt">
+                            <input type="text" name="usr_commt" id="usr_commt" class="__input __marginb_30" placeholder="Enter your Comment" data-name="user comment" data-id="ITEM0020" data-index="3" />
+                            <button type="button" class="__submitbtn" id="submit_cmt" onclick="fnAddComment();" disabled="disabled">Enter Comment</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- service header -->
+        </div>
+        <!-- service wrapper -->
+    </div>
+    <!-- Js files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/myScript.js"></script>
+</body>
+
+</html>
